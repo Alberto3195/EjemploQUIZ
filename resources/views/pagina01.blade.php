@@ -8,9 +8,11 @@
 @endsection
 
 @section('contenido')
-<p>esta es la prueba del contenido en el body</p>
+<p>esto es el body</p>
 
-<a href="{{ url('pagina02/Historia') }}" class="btn btn-xs btn-info pull-right">Historia</a>
-<a href="{{ url('pagina02/Economia') }}" class="btn btn-xs btn-info pull-right">Economía</a>
-<a href="{{ url('pagina02/Ingles') }}" class="btn btn-xs btn-info pull-right">Inglés</a>
+<a href="{{ url('pregunta', ['Historia']) }}" class="btn btn-xs btn-info pull-right">Historia</a>
+<a href="{{ url('pregunta', ['Economía']) }}" class="btn btn-xs btn-info pull-right">Economía</a>
+<a href="{{ url('pregunta', ['Ingles']) }}" class="btn btn-xs btn-info pull-right">Inglés</a>
+<a href="{{ url('api/preguntas', ['Historia']) }}" class="btn btn-xs btn-info pull-right">Historia pero un json solo</a>
+
 @endsection
