@@ -8,7 +8,7 @@
 @endsection
 
 @section('contenido')
-<h3>Esto está en el body de la pagina 02</h3>
+<h3>El tema elegido es: {{ $tema }}</h3>
 
 <a href="{{ url('/') }}" class="btn btn-xs btn-info pull-right">Página 01</a>
 
